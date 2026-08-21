@@ -1,0 +1,44 @@
+{
+  "default_behaviors": {
+    "language": "chinese",
+    "auto_create_files": true,
+    "preferred_tool": "platformio",
+    "default_environment": "esp32s3",
+    "auto_flash_after_build": false,
+    "build_on_save": false,
+    "require_permission_for_files": ["*.py", "*.js", "*.html"],
+    "auto_format_code": true,
+    "run_linting_after_build": true,
+    "verbose": false
+  },
+  "project_specific": {
+    "esp32_projects": {
+      "auto_generate_readme": true,
+      "suggest_board_configs": true,
+      "check_dependencies": true,
+      "auto_detect_project_type": true
+    }
+  },
+  "workflow_templates": {
+    "quick_build_flash": {
+      "description": "快速构建和烧录",
+      "commands": [
+        "pio run -e ${env} -t build",
+        "pio run -e ${env} -t upload"
+      ]
+    },
+    "format_and_lint": {
+      "description": "格式化和代码检查",
+      "commands": [
+        "./scripts/format.sh",
+        "./scripts/lint.sh"
+      ]
+    },
+    "monitor_serial": {
+      "description": "监控串口输出",
+      "commands": [
+        "pio run -e ${env} -t monitor"
+      ]
+    }
+  }
+}

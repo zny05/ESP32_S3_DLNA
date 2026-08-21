@@ -1,0 +1,180 @@
+# 忽略默认配置相关文件
+# Cloud development environments
+#.claude/
+#.claude/*.sh
+#.claude/*.json.backup
+#.claude/workflows.json
+#.claude/init-script.sh
+
+# 但保留主要设置文件
+#!.claude/settings.json
+#!.claude/defaults.json
+
+# 忽略子项目目录（由用户要求不包含在主仓库中）
+SoapESP32/
+airplay-esp32/
+.code-workspace
+
+# Compiled files and build artifacts
+*.o
+*.elf
+*.bin
+*.map
+*.hex
+*.gdb
+build*
+output*
+.Dockerfile*
+
+# PlatformIO specific
+.pio/
+.pioenvs/
+.piolibdeps/
+.piotasks/
+*.pioattrs
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment and virtual environments
+.venv/
+venv/
+env/
+
+# Temporary compilation directories
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+*/tmp/
+*temp*
+*temporary*
+
+# Log files
+*.log
+logs/
+
+# Cache and temporary directories
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build output directories
+# Python distribution
+*.egg-info/
+dist/
+build/
+
+output/
+
+# Documentation
+*.rst
+*.md.html
+
+# OS-specific files
+.DS_Store
+.DS_Store?\n._*
+.Spotlight-V100
+.Trashes
+hfsurl
+hfs:
+
+# System files
+Thumbs.db
+
+# Network-related files
+*.cache
+*.pid
+
+# ESP-IDF specific files
+sdkconfig
+sdkconfig.*
+!sdkconfig.defaults.*
+
+# Compiled source files
+src/*.o
+src/*.out
+main/*.o
+components/*/build/
+
+# Python virtual environment
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PlatformIO specific
+.pio/
+.pioenvs/
+.piolibdeps/
+.piotasks/
+*.pioattrs
+
+# Code editor specific
+.vscode/
+.idea/
+
+# Object files
+*.obj
+*.exe
+
+# Debug files
+*.dSYM/
+
+# Distribution packages
+*.deb
+*.rpm
+*.tar.gz
+
+# Python packages
+*.egg
+*.eggs/
+.eggs/
+
+# Merge request temporary files
+*.orig
+*.rej
+*.bak
+
+# TensorFlow Lite Micro data files
+data/*/list.txt
+data/*/data/
+data/*/cache/
+
+# Compiled protobuf files
+*.proto.bin
+
+# Micro chip information data
+data/*.inf
+
+# Hardware design files
+*.brd
+*.sch
+
+# Generated documentation
+*.rst.html
+
+# Common archive formats
+*.tar
+*.zip
+*.7z
+*.rar
+
+# Backup files
+*backup*
+*backups*
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Intel specific

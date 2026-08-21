@@ -1,0 +1,36 @@
+{
+  "quick_workflows": {
+    "build_and_flash": {
+      "description": "构建并烧录到板",
+      "steps": [
+        "pio run -e ${env} -t build",
+        "pio run -e ${env} -t upload"
+      ]
+    },
+    "format_and_lint": {
+      "description": "格式化和代码检查",
+      "steps": [
+        "./scripts/format.sh",
+        "./scripts/lint.sh"
+      ]
+    },
+    "monitor_serial": {
+      "description": "监控串口输出",
+      "steps": [
+        "pio run -e ${env} -t monitor"
+      ]
+    },
+    "upload_spiffs": {
+      "description": "烧录SPIFFS文件系统",
+      "steps": [
+        "pio run -e ${env} -t uploadfs"
+      ]
+    },
+    "menuconfig": {
+      "description": "打开Kconfig配置",
+      "steps": [
+        "pio run -e ${env} -t menuconfig"
+      ]
+    }
+  }
+}
