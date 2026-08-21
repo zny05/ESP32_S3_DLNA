@@ -1,0 +1,6 @@
+[submodule "SoapESP32"]
+	path = SoapESP32
+	url = https://github.com/yellobyte/SoapESP32.git
+[submodule "airplay-esp32"]
+	path = airplay-esp32
+	url = https://github.com/rbouteiller/airplay-esp32.git
