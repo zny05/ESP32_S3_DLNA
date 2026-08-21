@@ -11,8 +11,8 @@
 #!.claude/defaults.json
 
 # 忽略子项目目录（由用户要求不包含在主仓库中）
-SoapESP32/
-airplay-esp32/
+#SoapESP32/
+#airplay-esp32/
 ESP32_S3_DLNA.code-workspace
 
 # Compiled files and build artifacts
